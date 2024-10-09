@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair Of Wheels - Galeria</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho com Navegação Fixa -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">YourPairOfWheels</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="galeria.html" class="active">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Galeria com Lightbox -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2>Galeria de Imagens</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="img/back ground.jpg" alt="Galeria 1" onclick="openLightbox();currentSlide(1)">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/trailback.jpeg" alt="Galeria 2" onclick="openLightbox();currentSlide(2)">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/back cstm.jpg" alt="Galeria 3" onclick="openLightbox();currentSlide(3)">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/nkdbg.jpg" alt="Galeria 4" onclick="openLightbox();currentSlide(4)">
+                </div>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="close cursor" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+                <div class="lightbox-slide">
+                    <img src="images/galeria1.jpg" alt="Galeria 1">
+                </div>
+                <div class="lightbox-slide">
+                    <img src="images/galeria2.jpg" alt="Galeria 2">
+                </div>
+                <div class="lightbox-slide">
+                    <img src="images/galeria3.jpg" alt="Galeria 3">
+                </div>
+                <div class="lightbox-slide">
+                    <img src="images/galeria4.jpg" alt="Galeria 4">
+                </div>
+                <!-- Adicione mais slides conforme necessário -->
+
+                <!-- Controles do Lightbox -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Pair Of Wheels</h3>
+                <p>&copy; 2024 Pair Of Wheels. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="modelos.html">Modelos</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts para Interatividade (Lightbox) -->
+    <script src="scripts.js"></script>
+</body>
+</html>

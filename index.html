@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair Of Wheels - Início</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho com Navegação Fixa -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Pair Of Wheels</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal - Hero com Slider -->
+    <section id="inicio" class="hero">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('images/hero1.jpg');">
+                <div class="slide-content">
+                    <h2>Liberdade Sobre Duas Rodas</h2>
+                    <p>Explore os melhores modelos e viva a emoção das estradas.</p>
+                    <a href="modelos.html" class="btn">Ver Modelos</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero2.jpg');">
+                <div class="slide-content">
+                    <h2>Design e Performance</h2>
+                    <p>Motos que combinam estilo e potência para todos os gostos.</p>
+                    <a href="modelos.html" class="btn">Ver Modelos</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero3.jpg');">
+                <div class="slide-content">
+                    <h2>Inovação e Tecnologia</h2>
+                    <p>Equipadas com as mais recentes tecnologias para sua segurança e conforto.</p>
+                    <a href="modelos.html" class="btn">Ver Modelos</a>
+                </div>
+            </div>
+        </div>
+        <!-- Controles do Slider -->
+        <div class="slider-controls">
+            <span class="prev"><i class="fas fa-chevron-left"></i></span>
+            <span class="next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <!-- Indicadores do Slider -->
+        <div class="slider-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Pair Of Wheels</h3>
+                <p>&copy; 2024 Pair Of Wheels. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="modelos.html">Modelos</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts para Interatividade (Slider e Lightbox) -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pair Of Wheels - Modelos</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link para ícones (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho com Navegação Fixa -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">Pair Of Wheels</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="modelos.html" class="active">Modelos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Seção de Modelos com Filtros -->
+    <section id="modelos" class="modelos">
+      <div class="container">
+        <h2>Modelos de Motos</h2>
+        <div class="filtros">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="esportivas">
+            Esportivas
+          </button>
+          <button class="filter-btn" data-filter="custom">Custom</button>
+          <button class="filter-btn" data-filter="trail">Trail</button>
+          <button class="filter-btn" data-filter="street">Street</button>
+        </div>
+        <div class="motos-grid">
+            <div class="moto-item" data-category="esportivas">
+                <img src="img/ninja-1000.jpg" alt="Kawazaki Ninja 1000">
+                <h3>Kawazaki Ninja 1000</h3>
+                <p>Uma carenada com fome de autódromo.</p>
+                <button class="remove-btn">Remover</button>
+            </div>
+            <div class="moto-item" data-category="custom">
+                <img src="img/harley-davidson-fat-boy.jpg" alt="Harley-Davidson Fat Boy">
+                <h3>Harley-Davidson Fat Boy</h3>
+                <p>Clássica e moderna, rasga o asfalto.</p>
+                <button class="remove-btn">Remover</button>
+            </div>
+            <div class="moto-item" data-category="trail">
+                <img src="img/BMW-R-1200-GS-Adventure-optimized.jpg" alt="Triumph Tiger 1200 GT">
+                <h3>Triumph Tiger 1200 GT</h3>
+                <p>Aonde quiser ir, ela irá te levar, aventureira.</p>
+                <button class="remove-btn">Remover</button>
+            </div>
+            <div class="moto-item" data-category="street">
+                <img src="img/gsxs750.jpg" alt="Suzuki GSX-S 750">
+                <h3>Suzuki GSX-S 750</h3>
+                <p>Urbana, elegante, venenosa e completa.</p>
+                <button class="remove-btn">Remover</button>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+        </div>
+        <button id="add-moto-btn">Adicionar Moto</button>
+      </div>
+    </section>
+
+    <!-- Modal para Adicionar Moto -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Adicionar Nova Moto</h2>
+        <form id="add-moto-form">
+          <label for="moto-img">Imagem da Moto:</label>
+          <input type="file" id="moto-img" accept="image/*" required />
+
+          <label for="moto-nome">Nome da Moto:</label>
+          <input type="text" id="moto-nome" required />
+
+          <label for="moto-tipo">Tipo da Moto:</label>
+          <select id="moto-tipo" required>
+            <option value="">Selecione o tipo</option>
+            <option value="esportivas">Esportivas</option>
+            <option value="custom">Custom</option>
+            <option value="trail">Trail</option>
+            <option value="street">Street</option>
+          </select>
+
+          <label for="moto-legenda">Legenda:</label>
+          <textarea id="moto-legenda" rows="3" required></textarea>
+
+          <button type="submit">Adicionar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-info">
+          <h3>Mundo das Motos</h3>
+          <p>&copy; 2024 Mundo das Motos. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="modelos.html">Modelos</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts para Interatividade (Filtros) -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
